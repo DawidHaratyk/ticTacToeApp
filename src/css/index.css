@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Indie Flower", cursive;
+}
+
+.tic-tac-toe-app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/woodenBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.game-container__headline {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+}
+
+.board {
+  width: 410px;
+  background-color: #1f1f1f;
+  border: 8px solid #ec9e7a;
+}
+
+@media (max-width: 450px) {
+  .board {
+    width: 340px;
+  }
+}
+
+.board__scores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 20px;
+  color: yellow;
+}
+
+.board__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.board__score-number {
+  font-size: 65px;
+  margin-top: -25px;
+}
+
+.board__score-active {
+  opacity: 1;
+}
+
+.tic-tac-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 auto 12px auto;
+  width: 370px;
+  height: 370px;
+  color: white;
+  background-color: gray;
+}
+
+@media (max-width: 450px) {
+  .tic-tac-board {
+    width: 300px;
+    height: 300px;
+    gap: 3px;
+  }
+}
+
+.square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #1f1f1f;
+  cursor: pointer;
+}
+
+.square__number {
+  font-size: 65px;
+}
+
+@media (max-width: 450px) {
+  .square {
+    width: 98px;
+    height: 98px;
+  }
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(22, 22, 22, 0.7);
+}
+
+.modal-container__none {
+  display: none;
+}
+
+.modal-container .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 440px;
+  height: 260px;
+  padding: 40px 60px;
+  background-color: #dddddd;
+}
+
+@media (max-width: 450px) {
+  .modal-container .modal {
+    padding: 30px 15px;
+    width: 330px;
+    height: 230px;
+  }
+}
+
+.modal-container .modal__final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container .modal__buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.modal-container .modal__text {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.modal-container .modal__button {
+  width: 80px;
+  height: 80px;
+  background-color: #1f1f1f;
+  color: #dddddd;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Indie Flower", cursive;
+}
+
+.modal-container .modal__button-span {
+  font-size: 54px;
+}
+/*# sourceMappingURL=index.css.map */

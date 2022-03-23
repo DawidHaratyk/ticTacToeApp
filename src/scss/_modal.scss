@@ -1,0 +1,66 @@
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(22, 22, 22, 0.7);
+
+    &__none {
+        display: none;
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 440px;
+        height: 260px;
+        padding: 40px 60px;
+        background-color: rgb(221, 221, 221);
+
+        @media (max-width: 450px) {
+            padding: 30px 15px;
+            width: 330px;
+            height: 230px;
+        }
+
+        &__final {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__buttons-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        &__text {
+            font-size: 44px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &__button {
+            width: 80px;
+            height: 80px;
+            background-color: #1f1f1f;
+            color: rgb(221, 221, 221);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: "Indie Flower", cursive;
+
+            &-span {
+                font-size: 54px;
+            }
+        }
+    }
+}
